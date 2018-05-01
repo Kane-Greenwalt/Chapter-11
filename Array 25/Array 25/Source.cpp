@@ -7,20 +7,20 @@ using namespace std;
 
 int main()
 {
-	
+
 	int monthNumber[13] {31, 28, 31, 30, 31, 30, 30, 31, 30, 31, 30, 31};
-	
+
 
 	do{
 		//display number of days
 		cout << "Enter the month number (-1 to stop): " << endl;
 		cin >> monthNumber;
 		if (monthNumber > 0 && monthNumber < 13)
-			cout << "Number of days: " << days[monthNumber - 1] << endl << endl;
+			cout << "Number of days: " << [monthNumber 1] << endl;
 		else
-			cout << "Invalid month number" << endl << endl;
-	 } while (monthNumber != -1)
+			cout << "Invalid month number" << endl;
+	} while (monthNumber != 1);
 
-	system("pause");
-	return 0;
-}	 
+		system("pause");
+		return 0;
+}

@@ -23,6 +23,7 @@ int main()
 	double rainAmt[12] = {0.0};
 	int elements;
 	int choice;
+	
 	//get rainfall amounts
 	for (int x = 0; x < 12; x += 1)
     {
@@ -61,8 +62,7 @@ int main()
 		cin >> choice;
 		
 		//call appropriate function or end program
-		if (choice == 1)
-			displayMonthly(rainAmt, 12);
+		
 		else if (choice == 2)
 			displayTotal(rainAmt, 12);
 		else if (choice == 3)
@@ -84,6 +84,8 @@ void displayMonthly(double rain[], int numElements)
 	cout << "Monthly rainfall amounts:" << endl;
 	for (int x = 0; x < numElements; x += 1)
 		cout << rain[x] << endl;
+	if (choice == 1)
+		displayMonthly(rainAmt, 12);
 	//end for
 }  //end of displayMonthly function
 
@@ -98,7 +100,7 @@ void displayTotal(double rainAmt[], int elements)
 
 void displayAverage(double rainAmt[], int elements)
 {
-	double avg = 0.0;
+
 
 }  //end of displayAverage function
 
